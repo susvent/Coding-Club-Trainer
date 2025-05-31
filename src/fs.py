@@ -1,9 +1,9 @@
 import json
 
-USER_TABLE = 'data/users.json'
-PROBLEMS_TABLE = 'data/problems.json'
-OLD_TABLE = 'data/old.json'
-CACHE_TABLE = 'data/cache.json'
+USER_TABLE = '../data/users.json'
+PROBLEMS_TABLE = '../data/problems.json'
+OLD_TABLE = '../data/old.json'
+CACHE_TABLE = '../data/cache.json'
 
 def load(table):
     try:
