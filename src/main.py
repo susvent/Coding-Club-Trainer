@@ -113,7 +113,7 @@ class POTDCog(commands.Cog):
         fs.save(fs.OLD_TABLE, used)
 
         entry = {
-            "date": (START_DATE + timedelta(days=int(problems["idx"] - 1))).isoformat(),
+            "date": "",
             "levels": {
                 "Easy": {"url": easy_link, "solved": []},
                 "Medium": {"url": medium_link, "solved": []},
@@ -201,7 +201,9 @@ class POTDCog(commands.Cog):
                 fs.save(fs.PROBLEMS_TABLE, problems)
                 return await PROBLEMS_CHANNEL.send("❌ Error creating new entry.")
             problems[idx] = entry
-            fs.save(fs.PROBLEMS_TABLE, problems)
+            
+        problems[idx]["date"] = now.isoformat();    
+        fs.save(fs.PROBLEMS_TABLE, problems)
 
         embed = await self.announcement()
 
