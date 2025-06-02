@@ -6,7 +6,9 @@
         "type": "PROGRAMMING",
         "points": 750.0,
         "tags": [
-            "greedy"
+            "greedy",
+            "math",
+            "sortings"
         ]
     },
     {
@@ -16,6 +18,7 @@
         "type": "PROGRAMMING",
         "points": 500.0,
         "tags": [
+            "games",
             "greedy"
         ]
     },
@@ -46,7 +49,8 @@
         "type": "PROGRAMMING",
         "points": 3000.0,
         "tags": [
-            "dp"
+            "dp",
+            "graphs"
         ]
     },
     {
@@ -56,7 +60,9 @@
         "type": "PROGRAMMING",
         "points": 2250.0,
         "tags": [
-            "bitmasks"
+            "bitmasks",
+            "games",
+            "math"
         ]
     },
     {
@@ -66,7 +72,11 @@
         "type": "PROGRAMMING",
         "points": 1750.0,
         "tags": [
-            "dp"
+            "combinatorics",
+            "dp",
+            "greedy",
+            "math",
+            "probabilities"
         ]
     },
     {
@@ -76,11 +86,13 @@
         "type": "PROGRAMMING",
         "points": 1250.0,
         "tags": [
+            "brute force",
             "constructive algorithms",
             "dfs and similar",
             "dp",
             "graphs",
-            "greedy"
+            "greedy",
+            "trees"
         ]
     },
     {
@@ -90,11 +102,11 @@
         "type": "PROGRAMMING",
         "points": 500.0,
         "tags": [
-            "constructive algorithms",
+            "brute force",
             "dp",
-            "greedy",
             "math",
-            "number theory"
+            "number theory",
+            "shortest paths"
         ]
     },
     {

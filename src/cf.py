@@ -2,6 +2,7 @@ import aiohttp
 import random
 import re
 import fs
+import logging
 
 # Global session, initially None
 session: aiohttp.ClientSession | None = None

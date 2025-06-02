@@ -1,6 +1,6 @@
 {
-    "idx": "3",
-    "total": "3",
+    "idx": "4",
+    "total": "4",
     "1": {
         "date": "2025-05-29T08:00:00-04:00",
         "levels": {
@@ -174,11 +174,20 @@
         }
     },
     "3": {
-        "date": "2025-06-01T08:00:00-04:00",
+        "date": "2025-05-31T08:00:00-04:00",
         "levels": {
             "Easy": {
                 "url": "https://codeforces.com/contest/1841/problem/B",
-                "solved": []
+                "solved": [
+                    [
+                        "layout_404ed",
+                        34308000.0
+                    ],
+                    [
+                        "firephoenix16",
+                        174006000.0
+                    ]
+                ]
             },
             "Medium": {
                 "url": "https://codeforces.com/contest/2055/problem/C",
@@ -186,6 +195,23 @@
             },
             "Hard": {
                 "url": "https://codeforces.com/contest/1976/problem/C",
+                "solved": []
+            }
+        }
+    },
+    "4": {
+        "date": "2025-06-02T08:38:00.002247-04:00",
+        "levels": {
+            "Easy": {
+                "url": "https://codeforces.com/contest/1921/problem/C",
+                "solved": []
+            },
+            "Medium": {
+                "url": "https://codeforces.com/contest/1794/problem/C",
+                "solved": []
+            },
+            "Hard": {
+                "url": "https://codeforces.com/contest/1760/problem/F",
                 "solved": []
             }
         }

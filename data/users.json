@@ -68,9 +68,14 @@
                 "2",
                 "Medium",
                 -298321000.0
+            ],
+            [
+                "3",
+                "Easy",
+                174006000.0
             ]
         ],
-        "score": 4
+        "score": 5
     },
     "sungodtemple": {
         "profile": "passwordisa",
@@ -211,5 +216,16 @@
             ]
         ],
         "score": 6
+    },
+    "layout_404ed": {
+        "profile": "Layout_404ed",
+        "solved": [
+            [
+                "3",
+                "Easy",
+                34308000.0
+            ]
+        ],
+        "score": 1
     }
 }

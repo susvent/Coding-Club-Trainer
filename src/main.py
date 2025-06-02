@@ -14,8 +14,8 @@ ET = ZoneInfo("America/New_York")
 users = fs.load(fs.USER_TABLE)
 problems = fs.load(fs.PROBLEMS_TABLE)
 used = set(fs.load(fs.OLD_TABLE))
-POST_HOUR = 9
-POST_MINUTE = 49
+POST_HOUR = 8
+POST_MINUTE = 0
 START_DATE = datetime(2025, 5, 29, POST_HOUR, POST_MINUTE, tzinfo=ET)
 # CHANNEL_ID = 1372376410059968592
 # ROLE = 1372376966270812181
@@ -222,7 +222,6 @@ class POTDCog(commands.Cog):
    
     @tasks.loop(minutes=5)
     async def periodic_update(self):
-        logging.info("Checking for new submmissions")
         # Prepare the “now” timestamp for the embed
         timeNow = datetime.now(ET).strftime('%I:%M %p').lstrip('0')
         embed = Embed(
