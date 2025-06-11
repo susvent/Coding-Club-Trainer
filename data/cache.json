@@ -1,10 +1,96 @@
 [
     {
+        "contestId": 2117,
+        "index": "H",
+        "name": "Incessant Rain",
+        "type": "PROGRAMMING",
+        "tags": [
+            "data structures",
+            "divide and conquer",
+            "sortings"
+        ]
+    },
+    {
+        "contestId": 2117,
+        "index": "G",
+        "name": "Omg Graph",
+        "type": "PROGRAMMING",
+        "tags": [
+            "brute force",
+            "dsu",
+            "graphs",
+            "greedy",
+            "shortest paths",
+            "sortings"
+        ]
+    },
+    {
+        "contestId": 2117,
+        "index": "F",
+        "name": "Wildflower",
+        "type": "PROGRAMMING",
+        "tags": [
+            "combinatorics",
+            "dfs and similar",
+            "trees"
+        ]
+    },
+    {
+        "contestId": 2117,
+        "index": "E",
+        "name": "Lost Soul",
+        "type": "PROGRAMMING",
+        "tags": [
+            "greedy"
+        ]
+    },
+    {
+        "contestId": 2117,
+        "index": "D",
+        "name": "Retaliation",
+        "type": "PROGRAMMING",
+        "tags": [
+            "binary search",
+            "math",
+            "number theory"
+        ]
+    },
+    {
+        "contestId": 2117,
+        "index": "C",
+        "name": "Cool Partition",
+        "type": "PROGRAMMING",
+        "tags": [
+            "data structures",
+            "greedy"
+        ]
+    },
+    {
+        "contestId": 2117,
+        "index": "B",
+        "name": "Shrink",
+        "type": "PROGRAMMING",
+        "tags": [
+            "constructive algorithms"
+        ]
+    },
+    {
+        "contestId": 2117,
+        "index": "A",
+        "name": "False Alarm",
+        "type": "PROGRAMMING",
+        "tags": [
+            "greedy",
+            "implementation"
+        ]
+    },
+    {
         "contestId": 2116,
         "index": "B",
         "name": "Gellyfish and Baby's Breath",
         "type": "PROGRAMMING",
         "points": 750.0,
+        "rating": 1300,
         "tags": [
             "greedy",
             "math",
@@ -17,6 +103,7 @@
         "name": "Gellyfish and Tricolor Pansy",
         "type": "PROGRAMMING",
         "points": 500.0,
+        "rating": 800,
         "tags": [
             "games",
             "greedy"
@@ -28,6 +115,7 @@
         "name": "Gellyfish and Lycoris Radiata (Hard Version)",
         "type": "PROGRAMMING",
         "points": 3500.0,
+        "rating": 3500,
         "tags": [
             "data structures"
         ]
@@ -38,6 +126,7 @@
         "name": "Gellyfish and Lycoris Radiata (Easy Version)",
         "type": "PROGRAMMING",
         "points": 2500.0,
+        "rating": 3500,
         "tags": [
             "data structures"
         ]
@@ -48,6 +137,7 @@
         "name": "Gellyfish and Mayflower",
         "type": "PROGRAMMING",
         "points": 3000.0,
+        "rating": 3500,
         "tags": [
             "dp",
             "graphs"
@@ -59,9 +149,12 @@
         "name": "Gellyfish and Forget-Me-Not",
         "type": "PROGRAMMING",
         "points": 2250.0,
+        "rating": 2900,
         "tags": [
             "bitmasks",
+            "dp",
             "games",
+            "greedy",
             "math"
         ]
     },
@@ -71,6 +164,7 @@
         "name": "Gellyfish and Eternal Violet",
         "type": "PROGRAMMING",
         "points": 1750.0,
+        "rating": 2700,
         "tags": [
             "combinatorics",
             "dp",
@@ -85,6 +179,7 @@
         "name": "Gellyfish and Camellia Japonica",
         "type": "PROGRAMMING",
         "points": 1250.0,
+        "rating": 2100,
         "tags": [
             "brute force",
             "constructive algorithms",
@@ -101,12 +196,12 @@
         "name": "Gellyfish and Flaming Peony",
         "type": "PROGRAMMING",
         "points": 500.0,
+        "rating": 1500,
         "tags": [
-            "brute force",
+            "constructive algorithms",
             "dp",
             "math",
-            "number theory",
-            "shortest paths"
+            "number theory"
         ]
     },
     {
@@ -197,6 +292,99 @@
         "tags": [
             "binary search",
             "brute force",
+            "math"
+        ]
+    },
+    {
+        "contestId": 2111,
+        "index": "G",
+        "name": "Divisible Subarrays",
+        "type": "PROGRAMMING",
+        "rating": 2900,
+        "tags": [
+            "binary search",
+            "bitmasks",
+            "brute force",
+            "data structures",
+            "interactive"
+        ]
+    },
+    {
+        "contestId": 2111,
+        "index": "F",
+        "name": "Puzzle",
+        "type": "PROGRAMMING",
+        "rating": 2400,
+        "tags": [
+            "brute force",
+            "constructive algorithms",
+            "greedy",
+            "math"
+        ]
+    },
+    {
+        "contestId": 2111,
+        "index": "E",
+        "name": "Changing the String",
+        "type": "PROGRAMMING",
+        "rating": 1900,
+        "tags": [
+            "binary search",
+            "data structures",
+            "greedy",
+            "implementation",
+            "sortings",
+            "strings"
+        ]
+    },
+    {
+        "contestId": 2111,
+        "index": "D",
+        "name": "Creating a Schedule",
+        "type": "PROGRAMMING",
+        "rating": 1400,
+        "tags": [
+            "constructive algorithms",
+            "data structures",
+            "greedy",
+            "implementation",
+            "sortings"
+        ]
+    },
+    {
+        "contestId": 2111,
+        "index": "C",
+        "name": "Equal Values",
+        "type": "PROGRAMMING",
+        "rating": 1100,
+        "tags": [
+            "brute force",
+            "greedy",
+            "two pointers"
+        ]
+    },
+    {
+        "contestId": 2111,
+        "index": "B",
+        "name": "Fibonacci Cubes",
+        "type": "PROGRAMMING",
+        "rating": 1100,
+        "tags": [
+            "brute force",
+            "dp",
+            "implementation",
+            "math"
+        ]
+    },
+    {
+        "contestId": 2111,
+        "index": "A",
+        "name": "Energy Crystals",
+        "type": "PROGRAMMING",
+        "rating": 800,
+        "tags": [
+            "greedy",
+            "implementation",
             "math"
         ]
     },

@@ -136,15 +136,28 @@ class POTDCog(commands.Cog):
             uname: data for uname, data in users.items()
             if uname not in unlisted_usernames
         }
+        excluded_items = {
+            uname: data for uname, data in users.items()
+            if uname in unlisted_usernames
+        }
 
-        sorted_pairs = sorted(filtered_items.items(), key=lambda kv: int(kv[1]['score']), reverse=True)
+        sorted_main = sorted(
+            filtered_items.items(),
+            key=lambda kv: int(kv[1]["score"]),
+            reverse=True
+        )
+        sorted_obs = sorted(
+            excluded_items.items(),
+            key=lambda kv: int(kv[1]["score"]),
+            reverse=True
+        )
 
+        lines = []
         last_score = None
         last_rank = 0
-        lines = []
 
-        for i, (uname, data) in enumerate(sorted_pairs, start=1):
-            score = int(data['score'])
+        for i, (uname, data) in enumerate(sorted_main, start=1):
+            score = int(data["score"])
             if score == last_score:
                 rank = last_rank
             else:
@@ -158,10 +171,34 @@ class POTDCog(commands.Cog):
             member = member_map.get(uname)
             mention = member.mention if member else uname
             pts = "point" if score == 1 else "points"
-            # use ․ because normal period breaks discord markdown and makes ties not work
             lines.append(f"{rank}․ {mention} — {score} {pts}")
 
-        return "\n".join(lines) or "No entries yet."
+        if not lines:
+            lines.append("No entries yet.")
+
+        if sorted_obs:
+            lines.append("")
+            lines.append("**Observers:**")
+
+            last_score = None
+            last_rank = 0
+
+            for i, (uname, data) in enumerate(sorted_obs, start=1):
+                score = int(data["score"])
+                if score == last_score:
+                    rank = last_rank
+                else:
+                    rank = i
+                    last_score = score
+                    last_rank = i
+
+                member = member_map.get(uname)
+                mention = member.mention if member else uname
+                pts = "point" if score == 1 else "points"
+                lines.append(f"{rank}․ {mention} — {score} {pts}")
+
+        return "\n".join(lines)
+
 
     async def announcement(self) -> Embed:
         current = problems["idx"]
@@ -200,9 +237,10 @@ class POTDCog(commands.Cog):
                 problems["idx"] = idx
                 fs.save(fs.PROBLEMS_TABLE, problems)
                 return await PROBLEMS_CHANNEL.send("❌ Error creating new entry.")
-            problems[idx] = entry
-            
-        problems[idx]["date"] = now.isoformat();    
+            else:
+                problems[idx] = entry
+           
+        problems[idx]["date"] = now.isoformat();
         fs.save(fs.PROBLEMS_TABLE, problems)
 
         embed = await self.announcement()
@@ -252,7 +290,7 @@ class POTDCog(commands.Cog):
 
                         contest_id, index = utils.urlVals(url)
                         ret_solved, solved_ts = await cf.checkSub(
-                            users[name]["profile"], contest_id, index, "OK", "200"
+                            users[name]["profile"], contest_id, index, "OK", 5000
                         )
                         if not ret_solved:
                             continue
@@ -352,6 +390,7 @@ class POTDCog(commands.Cog):
             success, entry, issue = await self.createEntry(easy_link, medium_link, hard_link)
             if success:
                 problems[problems["total"]] = entry; 
+                fs.save(fs.PROBLEMS_TABLE, problems)
                 await interaction.followup.send(f"✅ POTD for next entry, {problems['total']} has been created.")
             else:
                 await interaction.followup.send(f"❌ Error, unable to create next POTD entry.")
