@@ -14,7 +14,7 @@ Credits:
 - Suggestions and bugfixes: fellow officers and club members. Thanks!
 - Inspiration taken from existing Discord bots (e.g. Codeforces verification, in particular "Limak#8378" and "geniosity limit exceeded#9608").
 
-<img width="1728" height="998" alt="image" src="https://github.com/user-attachments/assets/68d2d5e2-a8d5-4c4c-ac5f-de569d6ec037" />
+<img width="1728" height="999" alt="image" src="https://github.com/user-attachments/assets/1013f131-a5ee-4676-b035-792c0d6fce1d" />
 
 ## Features
 
@@ -75,11 +75,6 @@ All state is stored in JSON files:
 - Codeforces API wrapper (`cf.py`)  
 - Persistent JSON storage  
 
-## Purpose
-This bot was designed to make competitive programming more fun, consistent, and community-driven.
-It removes all administrative overhead so club officers can prioritze teaching, creating useful resources, and helping members grow.
-
-<img width="1728" height="999" alt="image" src="https://github.com/user-attachments/assets/1013f131-a5ee-4676-b035-792c0d6fce1d" />
 <img width="629" height="475" alt="image" src="https://github.com/user-attachments/assets/88d98312-da24-4bc8-beca-2232dc2436ff" />
 
 ---
