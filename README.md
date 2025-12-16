@@ -1,18 +1,18 @@
-# Problem of the Day Trainer - WWP High School South Coding Club
+# Problem of the Day
 
-A fully automated **Problem of the Day (POTD)** system built for High School South Coding Club community. 
+A fully automated **Problem of the Day (POTD)** system built to help users improve at algorithmic problems. This Discord bot application posts new Codeforces problems every other morning, tracks member submissions in real time, and maintains a dynamic leaderboard, requiring no manual alerts from club members or updates from officers (the first version used a Google Spreadsheet to track everything).
 
-This Discord bot posts new Codeforces problems every other morning, tracks member submissions in real time, and maintains a dynamic leaderboard, requiring no manual alerts from club members or updates from officers (the first version used a Google Spreadsheet to track everything).
-
-Used by 25+ club members, ~2000 interactions over 3 months. 
+~1500 community interactions over 3 months.
 
 Newest version of Problem of the Day is hosted on codeforces https://codeforces.com/group/61eWPWXekk/contests.
 
 Credits:
 
 - Main author: Suvanth
-- Suggestions and bugfixes: fellow officers and club members. Thanks!
+- Suggestions and bugfixes: WWP High School South Coding Club officers and members. Thanks!
 - Inspiration taken from existing Discord bots (e.g. Codeforces verification, in particular "Limak#8378" and "geniosity limit exceeded#9608").
+
+Example usage in High School South Coding Club Discord:
 
 <img width="1728" height="999" alt="image" src="https://github.com/user-attachments/assets/1013f131-a5ee-4676-b035-792c0d6fce1d" />
 
